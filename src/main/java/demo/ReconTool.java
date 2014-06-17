@@ -12,6 +12,6 @@ public class ReconTool implements CommandLineRunner {
     }
 
     public static void main(String[] args) {
-        System.out.printf("ReconTool.main(" + Arrays.toString(args) + ")");
+        System.out.printf(String.format("ReconTool.main(%s)",Arrays.toString(args)));
     }
 }
