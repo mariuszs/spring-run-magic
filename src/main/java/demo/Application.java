@@ -1,17 +1,16 @@
 package demo;
 
-import org.springframework.boot.SpringApplication;
-
 import java.util.Arrays;
 
-//@Configuration        <- commented because is not used
-//@ComponentScan
-//@EnableAutoConfiguration
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+//@SpringBootApplication <- commented out because it is not used
 public class Application {
 
-    public static void main(String[] args) {
-        SpringApplication.run(ReconTool.class, args);
-        System.out.printf(String.format("Application.main(%s)",Arrays.toString(args)));
+	public static void main(String[] args) {
+		SpringApplication.run(ReconTool.class, args);
+		System.out.println(String.format("Application.main(%s)", Arrays.toString(args)));
 
-    }
+	}
 }
